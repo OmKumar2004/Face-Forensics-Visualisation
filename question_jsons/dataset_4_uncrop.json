@@ -1,0 +1,22 @@
+[
+    {
+        "sketch_path": "/scratch/rs_pgi1/injured_cheeru/Injured_face/FaceIdentification/dataset/sketches/00013.jpg",
+        "option_paths": {
+            "A": "/scratch/rs_pgi1/injured_cheeru/Injured_face/Arc2Face_om/colorferet_frontal_rgb/final_dataset_images/00123_931230_fa.png",
+            "B": "/scratch/rs_pgi1/injured_cheeru/Injured_face/Arc2Face_om/colorferet_frontal_rgb/final_dataset_images/00550_940519_fa.png",
+            "C": "/scratch/rs_pgi1/injured_cheeru/Injured_face/Arc2Face_om/colorferet_frontal_rgb/final_dataset_images/00013_931230_fa.png",
+            "D": "/scratch/rs_pgi1/injured_cheeru/Injured_face/Arc2Face_om/colorferet_frontal_rgb/final_dataset_images/00209_940128_fa.png"
+        },
+        "answer": "C"
+    },
+    {
+        "sketch_path": "/scratch/rs_pgi1/injured_cheeru/Injured_face/FaceIdentification/dataset/sketches/00019.jpg",
+        "option_paths": {
+            "A": "/scratch/rs_pgi1/injured_cheeru/Injured_face/Arc2Face_om/colorferet_frontal_rgb/final_dataset_images/00162_931230_fa.png",
+            "B": "/scratch/rs_pgi1/injured_cheeru/Injured_face/Arc2Face_om/colorferet_frontal_rgb/final_dataset_images/00428_940422_fa.png",
+            "C": "/scratch/rs_pgi1/injured_cheeru/Injured_face/Arc2Face_om/colorferet_frontal_rgb/final_dataset_images/00566_941121_fa.png",
+            "D": "/scratch/rs_pgi1/injured_cheeru/Injured_face/Arc2Face_om/colorferet_frontal_rgb/final_dataset_images/00019_940307_fa.png"
+        },
+        "answer": "D"
+    }
+]

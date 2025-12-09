@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: #0b1120;
+  color: #e5e7eb;
+}
+
+header {
+  padding: 1.5rem 2rem;
+  border-bottom: 1px solid #1f2937;
+  background: radial-gradient(circle at top, #1f2937, #020617);
+}
+
+header h1 {
+  margin: 0 0 0.25rem;
+  font-size: 1.75rem;
+}
+
+header p {
+  margin: 0;
+  color: #9ca3af;
+}
+
+main {
+  padding: 1.5rem 2rem 2rem;
+}
+
+.controls {
+  margin-bottom: 1rem;
+}
+
+.controls label {
+  margin-right: 0.5rem;
+}
+
+#imageSelect {
+  min-width: 220px;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  border: 1px solid #4b5563;
+  background: #020617;
+  color: #e5e7eb;
+}
+
+.viewer {
+  display: grid;
+  grid-template-columns: 1.1fr 1.2fr;
+  gap: 1.5rem;
+}
+
+.image-panel, .text-panel {
+  border-radius: 0.75rem;
+  border: 1px solid #1f2937;
+  background: linear-gradient(135deg, rgba(15,23,42,0.95), rgba(15,23,42,0.85));
+  padding: 1rem;
+  min-height: 280px;
+}
+
+.image-panel h2, .text-panel h2 {
+  margin-top: 0;
+  font-size: 1.1rem;
+  color: #e5e7eb;
+}
+
+#mainImage {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 0.5rem;
+  border: 1px solid #111827;
+  background: #020617;
+}
+
+#description {
+  margin: 0;
+  max-height: 420px;
+  overflow: auto;
+  white-space: pre-wrap;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  color: #d1d5db;
+}
+
+footer {
+  padding: 1rem 2rem 1.5rem;
+  border-top: 1px solid #1f2937;
+  color: #6b7280;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 900px) {
+  .viewer {
+    grid-template-columns: 1fr;
+  }
+}

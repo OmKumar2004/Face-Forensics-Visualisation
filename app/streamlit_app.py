@@ -474,23 +474,23 @@ tabs = st.tabs(["Single Identity", "Trials Browser", "Analytics"])
 with tabs[0]:
     st.subheader("Single Identity Explorer")
     st.markdown("Select a sketch and view its frontal image, pose variants, description (if available), and trial result under chosen conditions.")
-    # Sketch selection: either upload or pick existing
+    # Sketch selection: pick existing (upload UI hidden)
     st.markdown("### Sketch Selection")
-    sel_col, up_col = st.columns([2, 1])
-    uploaded_file = None
-    with up_col:
-        uploaded_file = st.file_uploader("Upload sketch (.png/.jpg)", type=["png", "jpg"], key="upload_sketch")
+    sel_col = st.columns([2])[0]
+    uploaded_file = None  # upload disabled (kept for compatibility)
+    # with up_col:
+    #     uploaded_file = st.file_uploader("Upload sketch (.png/.jpg)", type=["png", "jpg"], key="upload_sketch")
     sketch_name: Optional[str] = None
     uploaded_image_obj: Optional[Image.Image] = None
     with sel_col:
-        sketch_name = st.selectbox("Or choose from dataset", list_sketches())
-    if uploaded_file is not None:
-        sketch_name = uploaded_file.name  # override
-        try:
-            uploaded_image_obj = Image.open(uploaded_file).convert("RGB")
-        except Exception:
-            st.error("Failed to read uploaded image.")
-            uploaded_image_obj = None
+        sketch_name = st.selectbox("Choose from dataset", list_sketches())
+    # if uploaded_file is not None:
+    #     sketch_name = uploaded_file.name  # override
+    #     try:
+    #         uploaded_image_obj = Image.open(uploaded_file).convert("RGB")
+    #     except Exception:
+    #         st.error("Failed to read uploaded image.")
+    #         uploaded_image_obj = None
     st.markdown("### Trial Condition Selection")
     cond_cols = st.columns(4)
     with cond_cols[0]:
